@@ -1,25 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Pirata+One&display=swap');
+
 .video {
 	position: absolute;
-	right: 0;
-	bottom: 1;
-	z-index: -1;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 90%; 
+    overflow: hidden;
 }
 
-@media (min-aspect-ratio: 16/9){
-	.video{
-		width: 100%;
-		height: auto;
-	}
-}
-@media (max-aspect-ratio: 16/9){
-	.video{
-		width: auto;
-		height: 100%;
-	}
-}
+.video video {
+  min-width: 100%; 
+  min-height: 90%; 
 
+  width: auto;
+  height: auto;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
 .logo {
 	display: flex;
 	justify-content: center;
@@ -30,6 +33,17 @@
 	overflow: hidden;
 }
 
+
+
+.test {
+	text-align: 10%;
+	text-decoration: none;
+	font-family: "Pirata One", system-ui;
+	color: white;
+	font-size: 180%;
+	padding: 0;
+}
+
 .menuBar a {
 	text-align: 10%;
 	text-decoration: none;
@@ -37,15 +51,68 @@
 	color: white;
 	font-size: 200%;
 	padding: 0 10%;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: blue;
+
 }
 
 .welcome {
 	display: flex;
-	color: white;
-	-webkit-text-stroke-width: 0.5px;
-	-webkit-text-stroke-color: black;
-	font-family: "Pirata One", system-ui;
-	font-size: 300%;
 	justify-content: center;
-	padding: 70%;
+	color: white;
+	font-family: "Pirata One", system-ui;
+	font-size: 100%;
+	padding: 10%;
+}
+
+.paragraph {
+	color: white;
+	padding-top: 5%;
+	font-family: "Pirata One", system-ui;
+	font-size: 150%;
+
+}
+
+.h {
+	display: flex;
+	color: white;
+	justify-content: center;
+	font-family: "Pirata One", system-ui;
+	padding-top: 5%;
+}
+
+.img {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	justify-content: space-around;
+	padding: 2%;
+	background-color: black;
+	}
+
+.music {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	justify-content: space-around;
+	padding: 2%;
+	font-family: "Pirata One", system-ui;
+	color: whitesmoke;
+	font-size: 125%;
+}
+
+.heading{
+	font-family: utf-8;
+	color: white;
+}
+
+.tour{
+	font-family: "Pirata One", system-ui;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-center;
+	justify-content: space-between;
+	justify-content: space-around;
 }
