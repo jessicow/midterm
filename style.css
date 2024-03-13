@@ -27,6 +27,8 @@ body{
 	justify-content: space-between;
 	align-items: center;
 	color: white;
+	font-family: "Pirata One", system-ui;
+	font-size: 110%;
 }
 
 video{
@@ -36,6 +38,9 @@ video{
 
 }
 
+#right{
+	padding-bottom: 25%;
+}
 
 
 
